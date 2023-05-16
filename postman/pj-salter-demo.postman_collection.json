@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "65995b25-2bba-4812-8888-da335ca78075",
+		"name": "pj-salter-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18091890"
+	},
+	"item": [
+		{
+			"name": "Find All Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pj-salter/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pj-salter",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"PJ's Birst Book\",\r\n    \"authorName\": \"PJ Salter\",\r\n    \"price\": \"125.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pj-salter/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pj-salter",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
